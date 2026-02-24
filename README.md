@@ -47,6 +47,6 @@ Here is a live view of the executive dashboard visualizing the data from Athena:
 
 1. **Clone the repository:**
    ```bash
-   git clone [https://github.com/](https://github.com/)[luyandazuma]/aws-online-retail-datalake.git
+   git clone [https://github.com/luyandazuma/aws-online-retail-datalake.git]
    cd aws-online-retail-datalake 
-   python src/dashboard
+   python src/dashboard.py
