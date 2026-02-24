@@ -32,12 +32,15 @@ Raw CSV sales data is automatically ingested, cleaned, partitioned by country, a
 
 ## 📊 Dashboard
 Here is a live view of the executive dashboard visualizing the data from Athena:
+<img src="images/dashboard 1.png" alt="dashboard" width="820">
+<img src="images/dashboard 2.png" alt="dashboard graphs" width="820">
+<img src="images/dashboard 3.png" alt="dashboard graphs" width="820">
 
 ## 🛠️ Tech Stack
 * **Cloud Infrastructure:** AWS (S3, Lambda, Glue, Athena, IAM)
 * **Data Engineering:** Python, Pandas, ETL Pipelines, Parquet, Data Partitioning
 * **Database & Analytics:** SQL, Time-Series Analysis, Unit Economics (AOV, CLV)
-* **Frontend/Visualization:** Plotly Dash, HTML/CSS (Bootstrap)
+* **Frontend/Visualization:** Plotly Dash, HTML/CSS (Tailwind)
 
 
 ## 🚀 How to Run Locally
@@ -46,3 +49,4 @@ Here is a live view of the executive dashboard visualizing the data from Athena:
    ```bash
    git clone [https://github.com/](https://github.com/)[luyandazuma]/aws-online-retail-datalake.git
    cd aws-online-retail-datalake 
+   python src/dashboard
