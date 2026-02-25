@@ -11,7 +11,7 @@ Raw CSV sales data is automatically ingested, cleaned, partitioned by country, a
 - [How to Run Locally](#how-to-run-locally)
 
 ## ☁️ Architecture
-![Architecture Diagram](images/architecture_diagram.png) 
+<img src="architecture/aws serverless data lake architecture.png" alt="architecture diagram" width="820">
 
 
 **The Pipeline:**
