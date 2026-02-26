@@ -3,6 +3,8 @@ This project is an end-to-end, serverless Data Lake built on AWS, designed to pr
 
 Raw CSV sales data is automatically ingested, cleaned, partitioned by country, and converted to a cost-effective columnar format (Parquet). The data is then queried using serverless SQL and visualized in a custom-built, interactive Python web application.
 
+**🔴 Live Deployment:** <a href="https://data-lake-dashboard.onrender.com">Data Lake Dashboard</a>
+
 ## 🔗 Table of Contents
 - [Architecture](#architecture)
 - [Key Features & Business Impact](#key-features--business-impact)
@@ -41,6 +43,7 @@ Here is a live view of the executive dashboard visualizing the data from Athena:
 * **Data Engineering:** Python, Pandas, ETL Pipelines, Parquet, Data Partitioning
 * **Database & Analytics:** SQL, Time-Series Analysis, Unit Economics (AOV, CLV)
 * **Frontend/Visualization:** Plotly Dash, HTML/CSS (Tailwind)
+* **Deployment:** Render
 
 
 ## 🚀 How to Run Locally
