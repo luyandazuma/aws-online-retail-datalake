@@ -1,0 +1,6 @@
+dash
+plotly
+awswrangler
+boto3
+pandas
+gunicorn
