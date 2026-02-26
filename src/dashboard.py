@@ -16,6 +16,7 @@ boto3.setup_default_session(region_name="af-south-1")
 # --- INITIALIZE APP (TAILWIND CDN) ---
 external_scripts = ['https://cdn.tailwindcss.com']
 app = dash.Dash(__name__, external_scripts=external_scripts)
+server = app.server
 app.title = "Online Retail Dashboard"
 
 # --- PLOTLY CHART COLORS ---
@@ -39,7 +40,6 @@ def run_query(query):
         return pd.DataFrame()
 
 # --- LAYOUT ---
-# min-h-screen ensures the background covers the whole page, bg-sky-50 is the pale blue
 app.layout = html.Div(className="min-h-screen bg-sky-50 p-4 md:p-8 font-sans text-slate-800", children=[
     
     # 1. Header
@@ -66,7 +66,7 @@ app.layout = html.Div(className="min-h-screen bg-sky-50 p-4 md:p-8 font-sans tex
         ),
     ]),
 
-    # 3. KPI Row (CSS Grid: 1 column on mobile, 4 on desktop)
+    # 3. KPI Row
     html.Div(className="grid grid-cols-1 md:grid-cols-4 gap-6 mb-8", children=[
         html.Div(className="bg-white rounded-xl shadow-md p-6 border border-slate-100 flex flex-col items-center justify-center", children=[
             html.H3(id='kpi-revenue', className="text-3xl font-bold text-blue-500 mb-1"),
